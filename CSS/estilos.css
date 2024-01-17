@@ -1,0 +1,443 @@
+/*CSS*/
+/*GENERAL*/
+*{
+	margin:0;
+	padding:0;
+}
+/*FONDO*/
+body{
+	background-color:black;
+	font-family:"Netflix Sans",Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.cabeza{
+	width:100%;
+	height:750px;
+	background-image:url(../IMG/Netflix_baner.png);
+	background-size:100%;
+	color:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+	.capa{
+	position:absolute;
+	background:black;
+	filter:opacity(.7);
+	top:0;
+	width:100%;
+	height:800px;
+}
+/*FONDO*/
+
+/*NAV*/
+	.navegacion{
+		margin:10px 0 30px 0;
+		width:100%;
+		height:60px;
+	}
+		nav{
+			display:flex;
+			justify-content:space-between;
+			position:relative;
+		}
+		.Idioma{
+			display:flex;
+		}
+			nav button{
+				background-color:#e50914;
+				color:white;
+				width:120px;
+				height:35px;
+				border:none;
+				border-radius:5px;
+				margin:15px 150px 0 0;
+				cursor:pointer;
+			}
+				nav button:hover{
+					background-color:#b30000;
+				}
+			nav img{
+				margin:-25px 0 0 150px;
+			}
+/*NAV*/
+
+/*Registrate*/
+.texto-registrate{
+	text-align:center;
+	margin:180px 0 20px 0;
+}	
+	.texto-registrate h1{
+		font-size:3em;
+		font-weight:750;
+		font-family:sans-serif;
+		position:relative;
+	}
+	.texto-registrate h2{
+		margin:25px 0 25px 0;
+		font-size:25px;
+		font-weight:300;
+		font-family:sans-serif;
+		position:relative;
+	}
+	.texto-registrate p{
+		margin-top:10px;
+		font-size:20px;
+		font-weight:500;
+		position:relative;
+	}
+	
+.registrate{
+	width:700px;
+	height:200px;
+	position:relative;
+	display:flex;
+	justify-content:center;
+}	
+		.registrate input{
+			background-color:black;
+			filter:opacity(.7);
+			width:420px;
+			height:55px;
+			padding:5px 0px 0px 20px;
+			border-radius:5px;
+			border: 1px solid #646473;
+			font-size:18px;
+			color:white;
+		}
+		.registrate label{
+			position:absolute;
+			left:9%;
+			top:15;
+			color:white;
+		}
+			.registrate input:focus~label,
+			.registrate input:valid~label{
+				top:-2px;
+				transition:.5s;
+				font-size:13px;
+				color:#9b9b8c;
+			}	
+.Comenzar{
+	width:190px;
+	height:55px;
+	margin-left:7px;
+	background-color:#e50914;
+	border:none;
+	border-radius:5px;
+	color:white;
+	font-size:25px;
+	text-align:center;
+	cursor:pointer;
+}	
+	.Comenzar:hover{
+		background-color:#b30000;
+	}
+/*Registrate*/
+
+/*TV*/
+.tv{
+	display:flex;
+	border:1px solid #20202f;
+	border-width:5px 0;
+	width:100%;
+	height:500px;
+	justify-content:center;
+	align-items:center;
+}
+
+.bloque-a{
+	color:white;
+	width:38%;
+	height:50%;
+	margin-right:20px;
+	margin-top:80px;
+}
+	.bloque-a h1{
+		font-size:3em;
+		margin-bottom:10px;
+	}
+	.bloque-a p{
+		font-size:23px;
+		margin-bottom:10px;
+		font-weight:450;
+	}
+.bloque-b{
+	width:38%;
+	height:50%;
+	position:relative;
+}
+	.tv_vieja{
+		position:absolute;
+		transform:translate(-480px, -40px);
+	}
+	.video-card{
+		position:relative;
+		transform:translate(28px, -10px);
+		width:100%;
+		height:100%;
+		filter:grayscale(10);
+	}
+/*TV*/
+
+/*Offline*/
+.offline{
+		display:flex;
+		border:1px solid #20202f;
+		border-width:5px 0;
+		width:100%;
+		height:500px;
+		justify-content:center;
+		align-items:center;
+}	
+.bloque-c{
+	color:white;
+	width:38%;
+	height:100%;
+	margin-right:20px;
+	margin-top:80px;
+	position:relative;
+}
+.descarga{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:absolute;
+	top:0;
+	background-color:#000000;
+	border:3px solid #333333;
+	border-radius:20px;
+	width:65%;
+	height:130px;
+	transform:translate(80px, 280px);
+}
+	.stranger{
+		margin:20px;
+	}
+		.sub-stranger{
+			margin:20px;
+			
+		}
+			.sub-stranger p{
+				color:#0080ff;
+			}
+		lord-icon{
+			margin:0px, 20px;
+		}	
+		.descarga h1{
+			margin:20px;
+		} 
+.bloque-d{
+	color:white;
+	width:38%;
+	height:50%;
+	margin-right:20px;
+	margin-top:80px;
+}
+	.bloque-d h1{
+		font-size:3em;
+		margin-bottom:10px;
+	}
+	.bloque-d p{
+		font-size:23px;
+		margin-bottom:10px;
+		font-weight:450;
+	}
+/*Offline*/
+
+/*Multi-plataforma*/
+.multi-plataforma{
+	display:flex;
+	border:1px solid #20202f;
+	border-width:5px 0;
+	width:100%;
+	height:500px;
+	justify-content:center;
+	align-items:center;
+}
+	.device-pile{
+		position:absolute;
+		transform:translate(-380px, -50px);
+	}
+.video-card-two{
+	width:380px;
+	height:580px;
+	transform:translate(100px, -200px);
+}
+/*Multi-plaataforma*/
+
+/*Family*/
+.family{
+	display:flex;
+	border:1px solid #20202f;
+	border-width:5px 0;
+	width:100%;
+	height:500px;
+	justify-content:center;
+	align-items:center;
+}
+/*Family*/
+
+/*Preguntas*/
+.help{
+	text-align:center;
+	color:white;
+	border:1px solid #20202f;
+	border-width:5px 0 15px 0;
+}
+	.help h1{
+		font-size:2.7em;
+		margin:70px 0 25px 0; 
+	}
+	.help p{
+		margin:50px 0 20px 0;
+		font-size:1.3em;
+	}
+.box-left{
+	text-align:left;
+	width:900px;
+	margin:auto;
+}	
+.Preguntas{
+	background-color:#222222;
+	padding:25px;
+	margin-top:10px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+	.Preguntas h2{
+		font-weight:400;
+	}
+	.Preguntas:hover{
+		background-color:#444444;
+	}
+	.Preguntas:hover .Respuesta{
+		max-height:1000px;
+	}
+.Respuesta{
+	background-color:#222222;
+	width:100%;
+	max-height:0px;
+	margin-bottom:5px;
+	overflow:hidden;
+	transition:all 1s;
+}	
+	.Respuesta p{
+		display:inline-block;
+		margin:25px;
+		font-size:22px;
+		font-weight:550;
+	}
+	.Respuesta:hover{
+		background-color:#444444;
+	}
+.input{
+	width:700px;
+	height:130px;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	margin:auto;
+}	
+		.input input{
+			background-color:black;
+			filter:opacity(.7);
+			width:420px;
+			height:55px;
+			padding:5px 0px 0px 20px;
+			border-radius:5px;
+			border: 1px solid #646473;
+			font-size:18px;
+			color:white;
+		}
+		.input label{
+			position:absolute;
+			left:8%;
+			top:18;
+			color:white;
+		}
+			.input input:focus~label,
+			.input input:valid~label{
+				top:-1px;
+				transition:.5s;
+				font-size:13px;
+				color:#9b9b8c;
+			}
+			Comenzar:hover{
+				background-color:rgba(131,5,11,0.99);
+			}
+/*Preguntas*/
+
+/*Footer*/
+	Footer{
+		width:70%;
+		height:450px;
+		display:flex;
+		flex-direction:column;
+		margin-left:180px;
+	}	
+	.call{
+		padding:40px 0;
+	}
+		.call p, a{
+			color:#b1b1bc;		
+			display:inline-block;
+		}
+	.orden{
+		display:flex;
+		justify-content:flex;
+	}	
+	.columna{
+		margin-right:100px;
+		display:flex;
+		flex-direction:column;
+	}	
+		.columna a{
+			margin-bottom:15px;
+		}
+.spanish{
+	margin-right:15px;
+	margin-top:10px;
+	width:120px;
+	height:33px;
+	background-color:#111111;
+	color:white;
+	border:.1em solid white;
+	border-width:1px 1px 0 1px;
+	font-size:16px;
+	text-align:center;
+}	
+	.spanish p{
+		margin-top:5px;
+	}
+	.spanish:hover{
+		background-color:#222222;
+	}
+	.spanish:hover .english{
+		max-height:1000px;
+	}
+.english{
+	margin-top:5px;
+	width:120px;
+	max-height:0px;
+	background-color:#111111;
+	color:white;
+	border:.1em solid white;
+	border-width:0 1px 1px 1;
+	font-size:16px;
+	overflow:hidden;
+	text-align:center;
+	transition: all 1s;
+}	
+	.english p{
+		margin-top:5px;
+		padding-bottom:10px;
+	}
+/*Footer*/
+@media (max-width: 600px){
+	.Navegacion{
+		margin-right: 00px;
+	}
+	.registrate{
+		width: 300px;
+	}
+}
